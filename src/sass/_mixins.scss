@@ -1,0 +1,55 @@
+// flexbox
+
+@mixin flexible-row() {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@mixin flexible-column() {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+@mixin flexible-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// grid
+
+@mixin grid-center() {
+  display: grid;
+  place-items: center;
+}
+
+// transitions
+
+@mixin transition() {
+  transition: all 0.3s ease 0s;
+}
+
+// media queries
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (min-width: 769px) {
+      @content;
+    }
+  }
+  @if $breakpoint == touch {
+    @media only screen and (max-width: 1023px) {
+      @content;
+    }
+  }
+  @if $breakpoint == laptop {
+    @media only screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+}

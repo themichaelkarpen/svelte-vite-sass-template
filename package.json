@@ -1,0 +1,20 @@
+{
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "css-build": "node-sass -w src/sass/global.scss public/global.css --output-style compressed",
+    "css-build-dev": "node-sass --omit-source-map-url src/sass/global.scss public/global.css",
+    "css-watch": "npm run css-build -- --watch",
+    "css-start": "npm run css-watch"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.11",
+    "node-sass": "^6.0.1",
+    "svelte": "^3.37.0",
+    "svelte-preprocess": "^4.7.3",
+    "vite": "^2.3.8"
+  }
+}
