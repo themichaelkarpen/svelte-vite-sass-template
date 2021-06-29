@@ -1,6 +1,18 @@
 {
-  "version": "0.0.0",
+  "name": "svelte-vite-sass-template",
+  "description": "Svelte + Vite setup with sass and a good project start structure. Intended for quickly setting up new projects.",
+  "version": "1.0.0",
+  "author": "themichaelkarpen",
+  "repository": "themichaelkarpen/svelte-vite-sass-template",
   "type": "module",
+  "keywords": [
+    "sveltejs",
+    "vitejs",
+    "scss",
+    "bootstrap",
+    "component",
+    "embed"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
